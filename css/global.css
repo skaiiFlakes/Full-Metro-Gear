@@ -32,6 +32,7 @@
   --fw-medium: 500;
   --fw-regular: 400;
   --trans-duration: 0.3s;
+  --content-width: 60%;
 }
 
 /* RESET CSS ELEMENTS */
@@ -94,7 +95,7 @@ li a {
 }
 
 .txt-block{
-  width: 85%;
+  width: var(--content-width);
   margin: 15px auto 25px auto;
 }
 
@@ -127,7 +128,7 @@ header, nav {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: var(--content-width);
   margin: auto;
 }
 
@@ -212,7 +213,7 @@ footer{
   gap: calc(10vw - 28px);
   margin: auto;
   padding: 20px 0 18px;
-  width: 85%;
+  width: var(--content-width);
 }
 
 .footer__col-1,
@@ -253,7 +254,7 @@ footer{
   color: var(--clr-neutral-300);
   margin: auto;
   padding-bottom: 5px;
-  width: 85%;
+  width: var(--content-width);
 }
 
 /* #footer-shop a {
@@ -264,7 +265,7 @@ footer{
   display: flex;
   margin: auto;
   padding: 10px 0 15px;
-  width: 85%;
+  width: var(--content-width);
 }
 
 .footer__legal p {
