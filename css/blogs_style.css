@@ -1,1 +1,6 @@
 @import './global.css';
+
+.instagram-widget-container {
+  width: var(--content-width);
+  margin: auto;
+}
