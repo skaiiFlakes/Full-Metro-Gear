@@ -42,6 +42,7 @@
   box-sizing: border-box;
 }
 
+
 * {
   color: inherit;
   font: inherit;
@@ -49,6 +50,7 @@
   padding: 0;
   text-decoration: none;
 }
+
 
 ul,
 ol {
@@ -67,6 +69,13 @@ body {
 body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 img,
