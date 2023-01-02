@@ -11,7 +11,7 @@
   --clr-neutral-100: rgba(255, 255, 255, 1);
   --clr-neutral-200: rgba(200, 200, 200, 1);
   --clr-neutral-300: rgba(150, 150, 150, 1);
-  --clr-neutral-400: rgba(125, 125, 125, 1);
+  --clr-neutral-400: rgba(100, 100, 100, 1);
   --clr-neutral-500: rgba(50, 50, 50, 1);
   --clr-neutral-600: rgba(0, 0, 0, 1);
   --clr-primary-100: rgba(185, 188, 135, 1);
@@ -78,7 +78,7 @@ svg {
 
 /* GENERAL STYLE */
 h1, h2 {
-  font: var(--fw-bold) var(--fs-600) var(--ff-heading);
+  font: var(--fw-regular) var(--fs-600) var(--ff-heading);
 }
 
 p,
@@ -87,6 +87,7 @@ li a {
   line-height: 1.25rem;
   text-align: justify;
 }
+
 .main-header{
   font-size: var(--fs-700);
   color: var(--clr-neutral-500);
@@ -101,18 +102,27 @@ li a {
 
 .txt-block h1{
   font-size: var(--fs-500);
-  color: var(--clr-neutral-500);
+  color: var(--clr-neutral-400);
 }
 
 .txt-block h2{
-  font: var(--fw-medium) var(--fs-400) var(--ff-heading);
-  color: var(--clr-neutral-400);
+  font: var(--fw-medium) var(--fs-300) var(--ff-heading);
+  color: var(--clr-neutral-300);
 }
 
 .txt-block p{
   font-size: var(--fs-300);
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-300);
   margin-bottom: 10px;
+}
+
+.pic-block{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.pic-block img{
+  object-fit: cover;
 }
 
 /* HEADER STYLE */
