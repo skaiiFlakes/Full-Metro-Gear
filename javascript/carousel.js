@@ -5,7 +5,7 @@ const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
-
+track.classList.remove('transition-active');
 
 //arrange slides next to one another
 const setSlidePosition = (slide, index) => {
@@ -21,6 +21,7 @@ function loopPositionSet(){
 const removeSlide = () => {
   track.classList.remove('transition-active');
 }
+
 const moveToSlide = (track, currentSlide, targetSlide, hasTransition) => {
   if (hasTransition === 1) {
     track.classList.add('transition-active');
@@ -30,12 +31,11 @@ const moveToSlide = (track, currentSlide, targetSlide, hasTransition) => {
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
   setTimeout(removeSlide, 500);
-  console.log(track.classList);
 }
 
 const updateDots = (currentDot, targetDot) => {
   currentDot.classList.remove('current-slide');
-  targetDot.classList.add('current-slide')
+  targetDot.classList.add('current-slide');
 }
 
 nextButton.addEventListener('click', e => {
@@ -51,7 +51,7 @@ nextButton.addEventListener('click', e => {
   const nextSlide = slides[nextIndex];
   const nextDot = dots[nextIndex];
   moveToSlide(track, currentSlide, nextSlide, 1);
-  updateDots(currentDot, nextDot)
+  updateDots(currentDot, nextDot);
 });
 
 prevButton.addEventListener('click', e => {
@@ -68,7 +68,7 @@ prevButton.addEventListener('click', e => {
   const prevDot = dots[prevIndex];
 
   moveToSlide(track, currentSlide, prevSlide, 1);
-  updateDots(currentDot, prevDot)
+  updateDots(currentDot, prevDot);
 });
 
 dotsNav.addEventListener('click', e => {
@@ -82,10 +82,28 @@ dotsNav.addEventListener('click', e => {
   const targetSlide = slides[targetIndex]
 
   moveToSlide(track, currentSlide, targetSlide, 1);
-  updateDots(currentDot, targetDot)
+  updateDots(currentDot, targetDot);
 });
 
 window.addEventListener("resize", (event) => {
   const currentSlide = track.querySelector('.current-slide');
   moveToSlide(track, currentSlide, currentSlide, 0);
 });
+
+function loopCarousel(){
+  const currentSlide = track.querySelector('.current-slide');
+  const currentDot = dotsNav.querySelector('.current-slide');
+  const currentIndex = slides.findIndex(slide => slide === currentSlide);
+  var nextIndex = null;
+  if (currentIndex === slides.length - 1) {
+    nextIndex = 0;
+  } else {
+    nextIndex = currentIndex + 1;
+  }
+  const nextSlide = slides[nextIndex];
+  const nextDot = dots[nextIndex];
+
+  moveToSlide(track, currentSlide, nextSlide, 1);
+  updateDots(currentDot, nextDot);
+  setTimeout(loopCarousel, 5000);
+}; loopCarousel();

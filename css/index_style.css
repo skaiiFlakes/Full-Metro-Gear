@@ -2,14 +2,15 @@
 
 .carousel {
   position: relative;
-  height: 40vw;
-  width: 85%;
+  height: 400px;
+  width: var(--content-width);
+  background: green;
   margin: 0 auto;
 }
 
 .carousel__image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -27,9 +28,10 @@
   transition: none;
 }
 
-.transition{
+.transition-active{
   transition: transform 500ms ease-in;
 }
+
 .carousel__slide{
   position: absolute;
   top: 0;
@@ -48,13 +50,14 @@
   border: 0;
   cursor: pointer;
 }
+
 .carousel__button--left {
-  left: -5vw;
+  left: -4vw;
   transform: scaleX(-1);
 }
 
 .carousel__button--right {
-  right: -5vw;
+  right: -4vw;
 }
 
 .carousel__button img{
@@ -81,7 +84,6 @@
   background: rgba(0,0,0,.5)
 }
 
-
 .feature {
   width: 40%;
   margin-left:auto;
@@ -99,4 +101,13 @@
 
 #quickdraw_phone img{
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel {
+    height: 45vw;
+  }
+  .carousel__button {
+    display: none !important;
+  }
 }
