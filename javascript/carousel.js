@@ -5,7 +5,6 @@ const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
-track.classList.remove('transition-active');
 
 //arrange slides next to one another
 const setSlidePosition = (slide, index) => {
@@ -107,3 +106,6 @@ function loopCarousel(){
   updateDots(currentDot, nextDot);
   setTimeout(loopCarousel, 5000);
 }; loopCarousel();
+
+moveToSlide(track, slides[1], slides[0], 0);
+updateDots(dots[1], dots[0]);
