@@ -99,7 +99,7 @@ li a {
 
 .main-header{
   font-size: var(--fs-700);
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-600);
   text-align: center;
   margin: 15px 0;
 }
@@ -111,7 +111,7 @@ li a {
 
 .txt-block h1{
   font-size: var(--fs-400);
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-600);
 }
 
 .txt-block h2{
