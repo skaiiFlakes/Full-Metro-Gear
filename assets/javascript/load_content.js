@@ -6,7 +6,7 @@ fetch('../assets/js/meta.html')
   if (filename == ""){
     filename = "index";
   }
-  const indivStylesheet = '<link rel="stylesheet" href="/css/'+filename+'_style.css">';
+  const indivStylesheet = '<link rel="stylesheet" href="/assets/css/'+filename+'_style.css">';
   const origMeta = document.querySelector("head").innerHTML;
   document.querySelector("head").innerHTML = data+indivStylesheet+origMeta;
 })
