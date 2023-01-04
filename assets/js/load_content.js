@@ -1,4 +1,4 @@
-fetch('../assets/js/meta.html')
+fetch('../assets/html/meta.html')
 .then(response => response.text())
 .then((data) => {
   const url = window.location.pathname;
@@ -11,13 +11,13 @@ fetch('../assets/js/meta.html')
   document.querySelector("head").innerHTML = data+indivStylesheet+origMeta;
 })
 
-fetch('../assets/js/headernav.html')
+fetch('../assets/html/headernav.html')
 .then(response => response.text())
 .then((data) => {
   document.querySelector("#headernav-load").innerHTML = data;
 })
 
-fetch('../assets/js/footer.html')
+fetch('../assets/html/footer.html')
 .then(response => response.text())
 .then((data) => {
   document.querySelector("#footer-load").innerHTML = data;
