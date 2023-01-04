@@ -1,7 +1,6 @@
 /* IMPORT NECESSARY FONTS AND SVGS */
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900);
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+@import './fonts.css';
 
 /* INTIIALIZE VARIABLES */
 :root {
@@ -10,27 +9,29 @@
   --clr-accent-400: rgba(231, 188, 96, 1);
   --clr-neutral-100: rgba(255, 255, 255, 1);
   --clr-neutral-200: #F3F4F7;
-  --clr-neutral-300: rgba(150, 150, 150, 1);
-  --clr-neutral-400: rgba(100, 100, 100, 1);
-  --clr-neutral-500: rgba(50, 50, 50, 1);
-  --clr-neutral-600: #242224;
+  --clr-neutral-300: #767676;
+  --clr-neutral-400: #555555;
+  --clr-neutral-500: #333333;
+  --clr-neutral-600: #222222;
   --clr-primary-100: rgba(185, 188, 135, 1);
   --clr-primary-200: rgba(141, 149, 91, 1);
   --clr-primary-300: rgba(94, 104, 64, 1);
   --clr-primary-400: rgba(46, 54, 29, 1);
-  --ff-body: Lato, Futura, Helvetica, sans-serif;
-  --ff-heading: Roboto, Arial, Helvetica, sans-serif;
-  --fs-200: 0.675rem;
-  --fs-300: 0.875rem;
-  --fs-400: 1.075rem;
-  --fs-500: 1.275rem;
-  --fs-600: 1.475rem;
-  --fs-700: 1.675rem;
-  --fs-800: 1.875rem;
-  --fs-900: 2.075rem;
-  --fw-bold: 700;
-  --fw-medium: 500;
-  --fw-regular: 400;
+  --ff-body: "Graphik Web", "Helvetica Neue", sans-serif;
+  --ff-heading: "Graphik Web", "Helvetica Neue", sans-serif;
+  --fs-200: 0.688rem; /* 11px */
+  --fs-300: 0.813rem; /* 13px */
+  --fs-400: 1.125rem; /* 18px */
+  --fs-500: 1.313rem; /* 21px */
+  --fs-600: 1.875rem; /* 30px */
+  --fs-700: 2.250rem; /* 36px */
+  --fs-800: 3.750rem; /* 60px */
+  --fw-thin: 100;
+  --fw-light: 200;
+  --fw-regular: 300;
+  --fw-medium: 400;
+  --fw-bold: 500;
+  --fw-black: 600;
   --trans-duration: 0.3s;
   --content-width: 800px;
 }
@@ -370,3 +371,52 @@ footer{
     --content-width: 90%;
   }
 }
+
+h1{
+  font: var(--fw-regular) var(--fs-800) var(--ff-body);
+  color: var(--clr-neutral-600);
+  text-transform: uppercase;
+}
+h2{
+  font: var(--fw-regular) var(--fs-700) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+h3{
+  font: var(--fw-regular) var(--fs-600) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+h4{
+  font: var(--fw-regular) var(--fs-500) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+h5{
+  font: var(--fw-regular) var(--fs-400) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+h6{
+  font: var(--fw-regular) var(--fs-300) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+p{
+  font: var(--fw-regular) var(--fs-200) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+a{
+  font: var(--fw-regular) var(--fs-200) var(--ff-body);
+  color: var(--clr-neutral-600);
+}
+/*
+222222
+333333
+767676
+
+h1: 30px regular
+h2: 24px medium / 17px regular / 21px regular
+h3: 14px regular / 18px / 36 px
+
+p: 13px regular / 21px regular
+a: 13px underlined
+b: 13px bold
+strong: 60px black
+*/
+
