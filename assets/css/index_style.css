@@ -90,7 +90,7 @@
   margin-right:auto;
 }
 .feature *{
-  text-align: center;
+  text-align: left;
 }
 .feature h1{
   color: var(--clr-primary-400);
