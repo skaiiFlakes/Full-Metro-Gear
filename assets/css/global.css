@@ -9,11 +9,11 @@
   --clr-accent-300: rgba(211, 186, 129, 1);
   --clr-accent-400: rgba(231, 188, 96, 1);
   --clr-neutral-100: rgba(255, 255, 255, 1);
-  --clr-neutral-200: rgba(200, 200, 200, 1);
+  --clr-neutral-200: #F3F4F7;
   --clr-neutral-300: rgba(150, 150, 150, 1);
   --clr-neutral-400: rgba(100, 100, 100, 1);
   --clr-neutral-500: rgba(50, 50, 50, 1);
-  --clr-neutral-600: rgba(0, 0, 0, 1);
+  --clr-neutral-600: #242224;
   --clr-primary-100: rgba(185, 188, 135, 1);
   --clr-primary-200: rgba(141, 149, 91, 1);
   --clr-primary-300: rgba(94, 104, 64, 1);
@@ -87,7 +87,7 @@ svg {
 
 /* GENERAL STYLE */
 h1, h2 {
-  font: var(--fw-regular) var(--fs-600) var(--ff-heading);
+  font: var(--fw-bold) var(--fs-600) var(--ff-heading);
 }
 
 p,
@@ -116,12 +116,12 @@ li a {
 
 .txt-block h2{
   font: var(--fw-medium) var(--fs-300) var(--ff-heading);
-  color: var(--clr-neutral-300);
+  color: var(--clr-neutral-600);
 }
 
 .txt-block p{
   font-size: var(--fs-300);
-  color: var(--clr-neutral-300);
+  color: var(--clr-neutral-600);
   margin-bottom: 10px;
 }
 
@@ -199,10 +199,13 @@ header, nav {
 }
 
 .nav__navbar-item {
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-600);
   display: inline-flex;
-  font: var(--fw-regular) var(--fs-200) var(--ff-body);
   padding: 15px 1.5vw;
+}
+
+.nav__navbar-item a{
+  font: var(--fw-regular) var(--fs-200) var(--ff-body);
 }
 
 .nav__navbar-item:hover {
