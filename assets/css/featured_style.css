@@ -73,7 +73,7 @@
 
 .product__btns--buy {
   border: none;
-  padding: .5rem 1rem;
+  padding: .3rem 1rem;
   cursor: pointer;
   margin: auto;
   transition: var(--trans-duration);
@@ -94,6 +94,10 @@
 
 .product:hover .product__btns--buy a{
   color: white;
+}
+
+.product:hover .off-info{
+  background: var(--clr-neutral-300);
 }
 
 .product__btns button:hover {
