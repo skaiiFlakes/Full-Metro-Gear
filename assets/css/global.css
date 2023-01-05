@@ -120,7 +120,7 @@ p, li a {
 }
 
 a {
-  font: var(--fw-regular) var(--fs-400) var(--ff-body);
+  font: var(--fw-regular) var(--fs-300) var(--ff-body);
   color: var(--clr-neutral-600);
   text-decoration: underline;
 }
