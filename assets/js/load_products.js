@@ -15,7 +15,7 @@ const createCard = (productName, currentPrice, discount, imgFileName, buttonURL)
   imgPath.src = '/assets/img/'+imgFileName;
   urlContainer.href = buttonURL;
   const decimalPlaces = 0;
-  if (discount === 'none'){
+  if (discount === 'none' || discount == 0){
     offContainer.parentNode.style.display = 'none';
     oldPriceContainer.style.display = 'none';
     currentPriceContainer.textContent = "₱"+currentPrice.toFixed(decimalPlaces);

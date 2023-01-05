@@ -96,6 +96,11 @@
   color: var(--clr-neutral-100);
 }
 
+.product:hover .product__img img{
+  scale: 105%;
+}
+
+
 .product__btns--buy:hover{
   background: var(--clr-primary-400) !important;
 }
