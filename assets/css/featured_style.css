@@ -77,32 +77,32 @@
   cursor: pointer;
   margin: auto;
   transition: var(--trans-duration);
-  background: white;
+  background: var(--clr-neutral-100);
   opacity: 0;
 }
 
 .product__btns--buy a{
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: var(--clr-neutral-100);
 }
 
 .product:hover .product__btns--buy{
-  background: var(--clr-accent-400);
+  background: var(--clr-primary-300);
   opacity: 100;
 }
 
 .product:hover .product__btns--buy a{
-  color: white;
+  color: var(--clr-neutral-100);
 }
 
-.product:hover .off-info{
+.product__btns--buy:hover{
+  background: var(--clr-primary-400) !important;
+}
+
+/* .product:hover .off-info{
   background: var(--clr-neutral-300);
-}
-
-.product__btns button:hover {
-  background: var(--clr-accent-400);
-}
+} */
 
 .off-info {
   background: var(--clr-accent-400);

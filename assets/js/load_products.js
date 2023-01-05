@@ -14,7 +14,7 @@ const createCard = (productName, currentPrice, discount, imgFileName, buttonURL)
   nameContainer.textContent = productName;
   imgPath.src = '/assets/img/'+imgFileName;
   urlContainer.href = buttonURL;
-  const decimalPlaces = 2;
+  const decimalPlaces = 0;
   if (discount === 'none'){
     offContainer.parentNode.style.display = 'none';
     oldPriceContainer.style.display = 'none';
