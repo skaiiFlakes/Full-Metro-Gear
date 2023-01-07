@@ -28,7 +28,7 @@ const createCard = (productName, currentPrice, discount, imgFileName, buttonURL)
   productList.appendChild(clone);
 };
 
-fetch('/product_list.csv')
+fetch('/shop/product_list.csv')
 .then(response => response.text())
 .then((data) => {
   const allTextLines = data.split(/\r\n|\n/);
