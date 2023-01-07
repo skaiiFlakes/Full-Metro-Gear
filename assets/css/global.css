@@ -386,6 +386,7 @@ footer {
   .footer__col-4 {
     display: none;
   }
+
   footer {
     justify-content: left;
     transform: translateX(-30px);
